@@ -686,13 +686,6 @@ print_system_info() {
     if [ "$swap" != "0" ]; then
         echo " Total Swap         : $(_blue "$swap ($uswap Used)")"
     fi
-    echo " System uptime      : $(_blue "$up")"
-    echo " Load average       : $(_blue "$load")"
-    echo " OS                 : $(_blue "$opsy")"
-    echo " Arch               : $(_blue "$arch ($lbit Bit)")"
-    echo " Kernel             : $(_blue "$kern")"
-    echo " Virtualization     : $(_blue "$virt_type")"
-    echo " TCP Control        : $(_blue "$tcpctrl")"
 }
 
 print_network_statistics() {
